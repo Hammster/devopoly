@@ -1,0 +1,51 @@
+{
+  "name": "devcord-devopoly",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "public/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:html": "node scripts/build.js",
+    "build:js": "rollup -c",
+    "build": "npm run build:html && npm run build:js",
+    "watch": "npm run build:html && rollup -cw",
+    "serve": "serve public",
+    "lint": "eslint --ext .ts,.tsx src/"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-typescript": "^7.7.7",
+    "@rollup/plugin-alias": "^3.0.0",
+    "@types/pug": "^2.0.4",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@wessberg/rollup-plugin-ts": "^1.1.83",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-typescript": "^6.3.1",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "node-sass-tilde-importer": "^1.0.2",
+    "normalize.css": "^8.0.1",
+    "pug": "^2.0.4",
+    "rollup": "^1.27.14",
+    "rollup-plugin-pug": "^1.1.1",
+    "rollup-plugin-scss": "^2.1.0",
+    "rollup-plugin-terser": "^5.1.3",
+    "scss": "^0.2.4",
+    "serve": "^11.2.0",
+    "stylelint": "^12.0.0",
+    "typescript": "^3.7.4"
+  },
+  "engines": {
+    "node": ">=13.2.0"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
